@@ -402,12 +402,12 @@ a:hover, a:focus, a:active {
   padding-bottom:0px;
 }
 
-.fix-img{
+/* .fix-img{
   -webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
-}
+} */
 
 .fix-img:hover{
   -webkit-filter: grayscale(0);
@@ -417,3 +417,25 @@ a:hover, a:focus, a:active {
 .fix-section {
   padding-top: 3.5rem;
 }
+
+.fix-img {
+  width: 200px; /* 원하는 고정 크기 */
+  height: 200px; /* 원하는 고정 크기 */
+  border-radius: 50%; /* 동그라미 모양 */
+  object-fit: cover; /* 이미지를 컨테이너에 맞추기 */
+  overflow: hidden; /* 이미지가 컨테이너를 넘어가지 않도록 */
+}
+
+section h4 {
+  font-size: 1.2rem; /* 제목 크기 */
+  font-weight: bold; /* 제목 강조 */
+  margin-bottom: 0.5rem; /* 제목과 본문 간격 조정 */
+}
+
+section h4 + p {
+  font-size: 0.9rem; /* 본문 크기 */
+  line-height: 1.4; /* 줄 간격 조정 */
+  margin-top: 0; /* 추가 간격 제거 */
+}
+
+

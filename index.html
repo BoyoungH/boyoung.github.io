@@ -118,25 +118,25 @@
   </nav>
 
   <!-- Header (이미지+텍스트 레이아웃으로 변경) -->
-  <header class="" style="padding: 60px 0; background-color: #fff;">
-    <div class="container">
-      <!-- Bootstrap의 row와 col 사용 -->
-      <div class="row align-items-center">
-        <!-- 왼쪽에 이미지 -->
-        <div class="col-md-5 mb-4 mb-md-0 text-center">
-          <img src="img/bg-masthead.jpg" alt="홍보영 이미지" class="img-fluid"
-            style="max-width: 100%; height: auto; border-radius: 5px;">
+  <header class="" style="padding: 50px 0; background: url('img/bg-callout.png') no-repeat center center; background-size: cover;">
+    <div class="container text-center">
+      <!-- 이미지와 텍스트 -->
+      <div class="row justify-content-center align-items-center">
+        <!-- 이미지 -->
+        <div class="col-12 mb-4">
+          <img src="img/bg-masthead.jpg" alt="bg-masthead" class="img-fluid rounded-circle"
+            style="width: 180px; height: 180px; object-fit: cover;">
         </div>
-        <!-- 오른쪽에 텍스트 -->
-        <div class="col-md-7 text-center text-md-left">
-          <h1 class="mb-1 fix-font">안녕하세요</h1>
-          <h3 class="mb-5 fix-font">
-            <em>제 이름은 홍보영입니다</em>
-          </h3>
+        <!-- 텍스트 -->
+        <div class="col-12">
+          <h1 class="mb-3 fix-font" style="font-size: 2.5rem !important; font-weight: bold;">안녕하세요</h1>
+          <h3 class="fix-font" style="font-size: 2rem !important; font-style: italic;">제 이름은 홍보영입니다</h3>
         </div>
       </div>
     </div>
   </header>
+
+
   <!-- (기존에 있던 overlay와 height: 100vh, background 관련 스타일은 제거) -->
 
   <!-- About -->
@@ -144,17 +144,23 @@
     <div class="container text-center">
       <div class="row">
         <div class="col-lg-10 mx-auto">
-          <h1 class="fix-font fix-font-white">저는 이런 사람입니다</h1>
+          <h1 class="fix-font fix-font-white" style="font-size: 2rem !important; font-weight: bold;">저는 이런 사람입니다</h1>
           <p class="lead mb-5 fix-font fix-font-white">
             안녕하세요, 금융IT 개발자 홍보영입니다.<br>
             빠르게 변화하는 금융 환경에서 안정적이고 혁신적인 IT 솔루션을 제공하며,<br>
             <a class="js-scroll-trigger" href="#portfolio">꾸준하게 성장하는</a> 개발자가 되는 것을 목표로 하고 있습니다.<br>
             고객과 기업 모두에게 신뢰받는 시스템을 구축하는 데 기여하고 싶습니다!
           </p>
+          <!-- 미모티콘 추가 -->
+          <div class="mt-4">
+            <img src="img/mimoticonBulb.png" alt="미모티콘" class="img-fluid" style="width: 200px; height: auto;">
+          </div>
         </div>
       </div>
     </div>
   </section>
+
+
 
 
   <!-- Services -->
@@ -177,7 +183,7 @@
           <p>성별 : 여</p>
           <p>생년월일 : 2001.09.03(23세)</p>
           <p>전화번호 : 010-4161-6588</p>
-          <p>이메일 : boyoung@naver.com</p>
+          <p>이메일 : hyong0903@naver.com</p>
           <p class="text-faded mb-0">Looks great on any screen size!</p>
         </div>
         <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
@@ -188,10 +194,12 @@
             <strong>Career</strong>
           </h4>
           <hr>
-          <p>2007-xx초등학교 졸업</p>
-          <p>2010-삼각산중학교 졸업</p>
           <p>2019-서울외국어고등학교 졸업</p>
           <p>2020-동국대학교 멀티미디어공학과 입학</p>
+          <p>2023-신한투자증권 프로디지털아카데미 교육 수료</p>
+          <p>2023-신한투자증권 정보시스템부, 플랫폼개발부 인턴</p>
+          <p>2024-SKT FLY AI Challenger 교육 수료</p>
+          <p>2025-신영증권 입사</p>
           <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>
         </div>
         <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
@@ -202,11 +210,11 @@
             <strong>Interesting</strong>
           </h4>
           <hr>
-          <p>취미 : 음악 듣기기</p>
+          <p>취미 : JPOP 음악 듣기</p>
           <p>좋아하는 것 : 강아지</p>
-          <p>싫어하는 것 : 예시</p>
-          <p>장점 : 꾸준함</p>
-          <p>단점 : 소심함함</p>
+          <p>싫어하는 것 : 비둘기</p>
+          <p>장점 : 책임감</p>
+          <p>단점 : 소심함</p>
           <p class="text-faded mb-0">Millions of users
             <i class="fa fa-heart"></i>
             Start Bootstrap!
@@ -220,21 +228,21 @@
             <strong>Skill</strong>
           </h4>
           <hr>
-          <p>Java</p>
-          <p>NySQL, SpringBoot</p>
-          <p>REST API AWS EC2 AWS RDS Deep Learning Docker Flask Jenkins Apache Kafka Machine Learning OpenCV
-            Python PyTorch React Native Redis Tensorflow flutter JIRA Spring Cloud Next.js GitHub Actions FastAPI</p>
+          <p>Programming Language : Java, Python</p>
+          <p>BackEnd FrameWork : SpringBoot, FastAPI, Flask</p>
+          <p>Front FrameWork : React, Flutter</p>
+          <p>Cloud : AWS, Azure, NHN</p>
+          <p>Others : MySQL, Redis, Docker, Kubernetes, MSA, Kafka, JIRA, SLACK</p>
           <p class="text-faded mb-0">I mustache you a question...</p>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="content-section fix-bg-white text-center" id="services">
-    <div>
+      <!-- 미모티콘 추가 -->
+      <div class="mt-5">
+        <img src="img/computer.png" alt="미모티콘" class="img-fluid" style="width: 200px; height: auto;">
+      </div>
     </div>
   </section>
 
-  <!-- modified1 -->
   <section class="fix-font fix-bg-black fix-font-white" id="modified">
     <section class="fix-section">
       <div class="container content-section-heading text-center">
@@ -244,54 +252,184 @@
     <section>
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-12 text-center">
             <div class="p-5">
-              <h4>2024-08 산학연계 교육과정 영상콘텐츠 공모전 최우수상</h4>
-              <p>산학연계 교육과정 영상콘텐츠 공모전 - 2024 CD 59초 영화제 최우수상 수상</p>
-              <h4>2024-08 SKT FLY AI 개인부문 우수상</h4>
-              <p>SKT FLY AI 교육 개인부문 패기반 우수상 수상 (우수수료생)</p>
-              <h4>2024-06 SKT기업 연계 교과우수상</h4>
-              <p>기업사회맞춤캡스톤디자인 과목 - SKT 연계</p>
-              <h4>2023-01 SQLD</h4>
-              <h4>2021-07 정보처리기사</h4>
-              <h4>2021-07 컴퓨터활용능력 1급</h4>
-              <h4>2021-07 한국사능력검정시험 1급</h4>
+              <!-- 항목 1 -->
+              <div class="mb-4">
+                <p style="font-size: 1rem; font-weight: bold; margin: 0;">2024-08</p>
+                <h4 style="font-size: 1.2rem; font-weight: bold; margin: 0;">산학연계 교육과정 영상콘텐츠 공모전 최우수상</h4>
+                <p style="font-size: 0.9rem; margin-top: 0.5rem;">산학연계 교육과정 영상콘텐츠 공모전 - 2024 CD 59초 영화제 최우수상 수상</p>
+              </div>
+    
+              <!-- 항목 2 -->
+              <div class="mb-4">
+                <p style="font-size: 1rem; font-weight: bold; margin: 0;">2024-08</p>
+                <h4 style="font-size: 1.2rem; font-weight: bold; margin: 0;">SKT FLY AI 개인부문 우수상</h4>
+                <p style="font-size: 0.9rem; margin-top: 0.5rem;">SKT FLY AI 교육 개인부문 패기반 우수상 수상 (우수수료생)</p>
+              </div>
+    
+              <!-- 항목 3 -->
+              <div class="mb-4">
+                <p style="font-size: 1rem; font-weight: bold; margin: 0;">2024-06</p>
+                <h4 style="font-size: 1.2rem; font-weight: bold; margin: 0;">SKT기업 연계 교과우수상</h4>
+                <p style="font-size: 0.9rem; margin-top: 0.5rem;">기업사회맞춤캡스톤디자인 과목 - SKT 연계</p>
+              </div>
+    
+              <!-- 항목 4 -->
+              <div class="mb-4">
+                <p style="font-size: 1rem; font-weight: bold; margin: 0;">2024-09</p>
+                <h4 style="font-size: 1.2rem; font-weight: bold; margin: 0;">Microsoft Certified: Azure AI Fundamentals</h4>
+              </div>
+    
+              <!-- 항목 5 -->
+              <div class="mb-4">
+                <p style="font-size: 1rem; font-weight: bold; margin: 0;">2024-06</p>
+                <h4 style="font-size: 1.2rem; font-weight: bold; margin: 0;">SQLD</h4>
+              </div>
+    
+              <!-- 항목 6 -->
+              <div class="mb-4">
+                <p style="font-size: 1rem; font-weight: bold; margin: 0;">2024-06</p>
+                <h4 style="font-size: 1.2rem; font-weight: bold; margin: 0;">정보처리기사</h4>
+              </div>
+    
+              <!-- 항목 7 -->
+              <div class="mb-4">
+                <p style="font-size: 1rem; font-weight: bold; margin: 0;">2023-02</p>
+                <h4 style="font-size: 1.2rem; font-weight: bold; margin: 0;">컴퓨터활용능력 1급</h4>
+              </div>
+    
+              <!-- 항목 8 -->
+              <div class="mb-4">
+                <p style="font-size: 1rem; font-weight: bold; margin: 0;">2021-08</p>
+                <h4 style="font-size: 1.2rem; font-weight: bold; margin: 0;">한국사능력검정시험 1급</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>    
+
+    <section>
+      <div class="container content-section-heading text-center">
+        <h2>활동</h2>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="p-5">
+              <!-- 항목 1 -->
+              <div class="mb-4">
+                <p style="font-size: 1rem; font-weight: bold; margin: 0;">2024-06 (교육)</p>
+                <h4 style="font-size: 1.2rem; font-weight: bold; margin: 0;">SKT FLY AI Challenger 수료</h4>
+                <p style="font-size: 0.9rem; margin-top: 0.5rem;">MLOps, 인공지능 교육</p>
+              </div>
+    
+              <!-- 항목 2 -->
+              <div class="mb-4">
+                <p style="font-size: 1rem; font-weight: bold; margin: 0;">2024-04 (대외활동)</p>
+                <h4 style="font-size: 1.2rem; font-weight: bold; margin: 0;">하나증권 서포터즈 하나드림 수료</h4>
+                <p style="font-size: 0.9rem; margin-top: 0.5rem;">아카데미원 수료, 금융권 대외활동으로 금융과 투자에 대한 전반적인 교육</p>
+              </div>
+    
+              <!-- 항목 3 -->
+              <div class="mb-4">
+                <p style="font-size: 1rem; font-weight: bold; margin: 0;">2023-07 (교육)</p>
+                <h4 style="font-size: 1.2rem; font-weight: bold; margin: 0;">신한투자증권 프로디지털 아카데미 수료</h4>
+                <p style="font-size: 0.9rem; margin-top: 0.5rem;">클라우드 기반 금융 ICT 풀스택 개발자 양성 과정</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    
 
     <section>
       <div class="container content-section-heading text-center">
-        <h2 class="">활동</h2>
+        <h2>외국어</h2>
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-12 text-center">
             <div class="p-5">
-              <h4>2024-06 ~ (교육) SKT FLY AI Challenger 수료</h4>
-              <p>MLOps, 인공지능 교육</p>
-              <h4>2024-04 ~ (대외활동) 하나증권 서포터지 하나드림 수료</h4>
-              <p>아카데미원 수료, 금융권 대외활동으로 금융과 투자에 대한 전반적인 교육</p>
-              <h4>2023-07 ~ (교육) 신한투자증권 프로디지털 아카데미 수료</h4>
-              <p>클라우드 기반 금융 ICT 풀스택 개발자 양성 과정</p>
+              <!-- 항목 1 -->
+              <div class="mb-4">
+                <p style="font-size: 1rem; font-weight: bold; margin: 0;">영어</p>
+                <h4 style="font-size: 1.2rem; font-weight: bold; margin: 0;">TOEIC Speaking</h4>
+                <p style="font-size: 0.9rem; margin-top: 0.5rem;">IH(140)</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <section>
+    
+  <section class="fix-font fix-bg-black fix-font-white" id="modified">
+    <section class="fix-section">
       <div class="container content-section-heading text-center">
-        <h2 class="">외국어</h2>
+        <h6 style="font-size: 1rem; text-align: center;">열정과 도전을 통해 성장하는 사람</h6>
+        <h2 style="font-size: 1.8rem; text-align: center;">나는 이런 사람입니다</h2>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="p-5">
-              <h4>영어</h4>
-              <p>TOEIC Speaking • IH(140)</p>
+    </section>
+  
+    <section>
+      <div class="container text-center">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2 text-center">
+            <div class="p-3">
+              <!-- 사진 크기 키움 -->
+              <img class="img-fluid fix-img" src="/img/cake.jpg" alt="Cake">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-3">
+              <h2 style="font-size: 1.5rem; font-weight: bold; text-align: center;">"밝고 긍정적인 사람입니다."</h2>
+              <h4 style="font-size: 1rem; font-weight: normal; text-align: center;">
+                웃음벨이 낮아서 쉽게 잘 웃으며<br> 주변에 밝은 에너지를 주기 위해 노력합니다.
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section>
+      <div class="container text-center">
+        <div class="row align-items-center">
+          <div class="col-lg-6 text-center">
+            <div class="p-3">
+              <!-- 사진 크기 키움 -->
+              <img class="img-fluid fix-img" src="/img/beach.jpg" alt="Beach">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-3">
+              <h2 style="font-size: 1.5rem; font-weight: bold; text-align: center;">"감성적인 사람입니다."</h2>
+              <h4 style="font-size: 1rem; font-weight: normal; text-align: center;">
+                바다와 노을을 한 사진에 담는 것을 좋아합니다.<br> 아름다운 자연경관을 보면 기분이 좋아집니다.
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section>
+      <div class="container text-center">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2 text-center">
+            <div class="p-3">
+              <!-- 사진 크기 키움 -->
+              <img class="img-fluid fix-img" src="/img/game.jpg" alt="Game">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-3">
+              <h2 style="font-size: 1.5rem; font-weight: bold; text-align: center;">"열정적이고 계획적인 사람입니다."</h2>
+              <h4 style="font-size: 1rem; font-weight: normal; text-align: center;">
+                공부, 운동, 노는 것까지 계획과 목표를 철저히 세우고 달성하기 위해 노력합니다.
+              </h4>
             </div>
           </div>
         </div>
@@ -300,7 +438,7 @@
   </section>
 
   <!-- Portfolio -->
-  <section class="content-section fix-font" id="portfolio" style="background-color: #fff; padding-bottom: 400px;">
+  <!-- <section class="content-section fix-font" id="portfolio" style="background-color: #fff; padding-bottom: 400px;">
     <div class="container" style="max-width: 1200px;">
       <div class="content-section-heading text-center">
         <h3 class="text-secondary mb-0">프로젝트</h3>
@@ -339,15 +477,16 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Callout -->
-  <section class="fix-font fix-bg-black fix-font-white" style="background-color: #000; padding: 60px 0;">
+  <section class="fix-font fix-bg-white fix-font-black" style="background-color: #fff; padding: 60px 0; color: #000;">
     <div class="container text-center">
-      <h2 class="mx-auto mb-5">"잘 부탁드립니다!"</h2>
-      <h4>- 신영증권 신입사원 홍보영 -</h4>
+      <h2 class="mx-auto mb-5" style="color: #000;">"잘 부탁드립니다!"</h2>
+      <h4 style="color: #000;">- 신영증권 신입사원 홍보영 -</h4>
     </div>
   </section>
+  
 
   <!-- Call to Action -->
   <!-- 
